@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #0d1a2d;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .wrapper {
+        background: #15273f;
+        width: 270px;
+        height: 434px;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid red; */
+        border-radius: 15px;
+        font-size: 14px;
+      }
+
+      .img_wrapper {
+        /* border: 2px solid green; */
+        width: inherit;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .img_wrapper img {
+        width: 90%;
+        height: 90%;
+        border-radius: 15px;
+      }
+
+      .text_wrapper {
+        padding: 0 1rem 1rem 1rem;
+      }
+
+      .text_wrapper .p_one {
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        font-size: 16px;
+      }
+
+      .text_wrapper .p_two {
+        color: #8bacd9;
+        font-weight: lighter;
+      }
+
+      .days_left {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 0.01px solid #8bacd9;
+        padding: 1rem 0;
+      }
+
+      .days_left_ETH {
+        color: #00fff8;
+        display: flex;
+        align-items: center;
+      }
+
+      .days_left_count {
+        color: #8bacd9;
+        display: flex;
+        align-items: center;
+      }
+
+      .avatar {
+        width: 25px;
+        margin-right: 0.5rem;
+      }
+
+      .last_p {
+        margin: 1.5rem 0;
+        color: #8bacd9;
+        display: flex;
+        align-items: center;
+      }
+
+      .last_p span {
+        color: #fff;
+        margin-left: 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
+    0.041 ETH 3 days left Creation of Jules Wyvern
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <div class="wrapper">
+      <div class="img_wrapper">
+        <img src="./images/image-equilibrium.jpg" alt="" />
+      </div>
+      <div class="text_wrapper">
+        <p class="p_one">Equilibrium #3429</p>
+        <p class="p_two">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="days_left">
+          <p class="days_left_ETH">
+            <img src="./images/icon-ethereum.svg" alt="" /> 0.041 ETH
+          </p>
+          <p class="days_left_count">
+            <img src="images/icon-clock.svg" alt="" /> 3 days left
+          </p>
+        </div>
+
+        <p class="last_p">
+          <img src="./images/image-avatar.png" class="avatar" alt="" /> Creation
+          of <span>Jules Wyvern</span>
+        </p>
+      </div>
+      <img src="design/active-states.jpg" alt="" />
+    </div>
+  </body>
+</html>
